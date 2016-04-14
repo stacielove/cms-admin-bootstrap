@@ -61,6 +61,10 @@ body#login {
   margin-top: 20px;
 }
 
+.tablesorter th  {
+  cursor: pointer;
+}
+
 
 
 /* Footer */
