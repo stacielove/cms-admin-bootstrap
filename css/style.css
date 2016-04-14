@@ -61,6 +61,8 @@ body#login {
   margin-top: 20px;
 }
 
+
+
 /* Footer */
 footer {
   margin-top: 30px;
@@ -68,7 +70,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #1f87c2;
+  /*background-color: #1f87c2;*/
+  background-color: #222222;
   text-align: center;
   color: #fff;
 }
