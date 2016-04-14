@@ -54,14 +54,14 @@ body#login {
   border-top-right-radius: 0;
 }
 
-/* Footer Sticky Footer! */
+/* Footer */
 footer {
-  position: absolute;
+  margin-top: 30px;
   padding-top: 20px;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #222222;
+  background-color: #1f87c2;
   text-align: center;
   color: #fff;
 }
