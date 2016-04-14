@@ -54,6 +54,13 @@ body#login {
   border-top-right-radius: 0;
 }
 
+/*Pages */
+
+.actions {
+  float: right;
+  margin-top: 20px;
+}
+
 /* Footer */
 footer {
   margin-top: 30px;
