@@ -87,6 +87,18 @@
             <li class="active">Categories</li>
           </ol>
 
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="input-group">
+                <input type="text" class="form-control search-form" placeholder="Search user results for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /row -->
+          <br>
+
           <table id="sort-table" class="table table-striped tablesorter">
             <thead>
             <tr>
@@ -157,6 +169,17 @@
           sortList:[[0,0],[1,0]]
         });
       });
+    </script>
+
+    <script>
+    var $rows = $('table tr');
+    $('.search-form').keyup(function(){
+      var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+      $rows.show().filter(function(){
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+      }).hide();
+    });
     </script>
   </body>
 </html>
